@@ -3,7 +3,7 @@ const VERSION = 'version_01';
 const CACHE_NAME = APP_PREFIX + VERSION;
 
 self.addEventListener('fetch', function (e) {
-    console.log('fetch request : ' + e.request.url)
+    //console.log('fetch request : ' + e.request.url)
     e.respondWith(
         caches.match(e.request).then(function (request) {
             if (request) {
@@ -23,7 +23,8 @@ const FILES_TO_CACHE = [
     "/css/styles.css",
     "/js/idb.js",
     "/js/index.js",
-    "/icons/icon-192x192.png"
+    "/icons/icon-192x192.png",
+    "/manifest.json"
 ];
 
 self.addEventListener('install', function (e) {
