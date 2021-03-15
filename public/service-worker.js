@@ -1,6 +1,7 @@
 const APP_PREFIX = 'BudgetTracker-';     
 const VERSION = 'version_01';
 const CACHE_NAME = APP_PREFIX + VERSION;
+const DATA_CACHE_NAME = "Data-cache-v1"
 
 // self.addEventListener('fetch', function (e) {
 //     //console.log('fetch request : ' + e.request.url)
